@@ -1,0 +1,47 @@
+<!-- HTML version 5 -->
+
+<!DOCTYPE html>
+
+<html> <!-- HTML version 5 -->
+
+<head>
+
+<title>JS in detail </title>
+
+</head>
+
+<body>
+
+<script>
+    let student={
+        name:'Rayan',
+        grade:8,
+        studentId:101,
+        marks:88,
+        getGrade: function(){
+            if (this.manrks>=80) return "A+";
+            else if (this.marks>=70) return "A";
+            else if (this.marks>=60) return "B";
+            else if (this.marks>=50) return "C";
+            else if (this.marks>=40) return "D";
+            else if (this.marks>=30) return "E";
+            else if (this.marks>=25) return "F";
+            else return "ERROR";
+        },
+    showInfo: function()
+    {
+        document.write("Student Information");
+        document.write("<br>");
+        document.write("Name:" + this.name);
+        document.write("Grade:" + this.grade);
+        document.write('Marks to Grade check' + this.getGrade() + "<br>");
+    }
+    };
+    student.showInfo();
+
+
+</script>
+
+</body>
+
+</html>
