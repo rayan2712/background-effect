@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+    button{
+        background-color: rgb(121, 121, 231);
+
+    }
+    button:hover{
+        background-color: rgb(216, 2, 2)
+    }
+</style>
+
+<body>
+<button onclick="ascending()">Ascending order</button>
+<button onclick="descending()">Descending order</button>
+
+<p id="result1"></p>
+<button onclick="myFunction1()">Try it!</button>
+
+<script>
+var points = [25, 60, 132, 3, 56, 67];
+document.getElementById("result").innerHTML = points;
+
+function ascending() {
+    points.sort(function(a,b){return a-b})
+    document.getElementById("result").innerHTML = points;
+}
+
+function descending() {
+    points.sort(function(a,b){return b-a})
+    document.getElementById("result").innerHTML = points;
+}
+
+function myFunction(num) {
+    return num * 3;
+}
+
+function myFunction1() {
+    var x = 10;
+    var y = 20;
+    var a = eval("x + y") + "<br>";
+    document.getElementById("result1").innerHTML = a;
+}
+
+</script>
+
+</body>
+
+</html>

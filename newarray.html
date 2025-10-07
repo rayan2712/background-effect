@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+ <p>Multiply every element in the array with 12:</p>
+ <p id="product_value"></p>
+
+<script>
+var numbers = [12, 6, 13, 24]
+
+ function myFunction(num) {
+    return num * 12;
+ }
+ var newarray = numbers.map(myFunction);
+    document.getElementById("product_value").innerHTML = newarray;
+</script>
+
+</body>
+
+</html>
