@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>JS</title>
+
+</head>
+
+<body>
+ <p id="error_message"></p>
+<script>
+ try {
+    addalert("Welcome guest!!!");
+ }
+ catch(err) {
+    document.getElementById("error_message").innerHTML = err.message;
+ }
+
+ add = (a,b) => a+b;
+ documnet.getElementById("result").innerHTML = add(6,7);
+
+</script>
+
+</body>
+
+</html>
