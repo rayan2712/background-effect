@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>JSON</title>
+
+</head>
+
+<body>
+ <p id="result"></p>
+<script>
+  var myObj = {
+    name: "Rayan",
+    age: 14,
+    grade: 8
+  };
+
+  var myJSON = JSON.stringify(myObj);
+
+  var newObj = JSON.parse(myJSON);
+document.getElementById("result").innerHTML = newObj.name;
+
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+
+    function sum(a,b) {
+        var sum = a + b;
+        muDisplayer(sum);
+    }
+
+let myPromise = new Promise(function(myResolve, myReject) {
+
+    let x = 0;
+
+    if (x == 0) {
+        myResolve ("OK");
+    } else {
+        myReject("Error");
+    }
+});
+
+myPromise.then(
+    function(value) {sum(5,5);},
+    function(error) {sum(error);}
+);
+
+
+async function add(a,b) {
+    let response = await a + b;
+    display(response);
+}
+function display(some) {
+documnet.getElementById("result1").innerHTML = some;
+}
+add(5,20);
+
+</script>
+
+</body>
+
+</html>
