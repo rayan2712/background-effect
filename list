@@ -1,0 +1,7 @@
+file = open('codingal2.txt', 'r')
+counter = 0
+
+content = file.read()
+CoList = content.split("\n")
+print(CoList)
+counter = len(CoList)
